@@ -1,5 +1,7 @@
 #This displays the total shop inventory
-shop_inventory = {"Books": ['Malcolm X', 'Learn how to code for Dummies,' 'Life of Pi'],
+shop_inventory = {"Books": {"1":"Malcolm X",
+                             "2": 'Learn how to code for Dummies',
+                               "3": 'Life of Pi',}
                   "Drinks": ['Latte', 'Coffee', 'Tea', 'Juice'],
                    "Food": ["Sandwich", "Pastry", "Salad", "Cookie"] }
  
@@ -10,6 +12,8 @@ def customer_menu() :
      print('2. Food')
      print('3. Drink')
      print('3. Exit')
+
+     user_input = input("Please could you type")
  
 def employee_menu():
      return print('testing')
@@ -29,3 +33,6 @@ def main_menu():
          print('Goodbye')
  
 main_menu()
+
+
+
